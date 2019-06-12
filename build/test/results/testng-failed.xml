@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Selenium_testNG]">
+  <parameter name="global_count" value="10"/>
+  <parameter name="num1" value="30"/>
+  <parameter name="difference" value="25"/>
+  <parameter name="sum" value="35"/>
+  <parameter name="divide" value="6"/>
+  <parameter name="multiply" value="150"/>
+  <parameter name="num2" value="5"/>
+  <test name="All tests for Selenium_testNG(failed)">
+    <classes>
+      <class name="com.syntel.calculatorTest.TG_testcase1">
+        <methods>
+          <include name="tearDownMethod"/>
+          <include name="tearDownClass"/>
+          <include name="setUpMethod"/>
+          <include name="setUpClass"/>
+        </methods>
+      </class> <!-- com.syntel.calculatorTest.TG_testcase1 -->
+      <class name="SomthigntoTEST">
+        <methods>
+          <include name="tearDownClass"/>
+          <include name="tearDownMethod"/>
+          <include name="setUpMethod"/>
+          <include name="setUpClass"/>
+        </methods>
+      </class> <!-- SomthigntoTEST -->
+      <class name="Calculator_testNG">
+        <methods>
+          <include name="testSubPositives"/>
+          <include name="setUpClass"/>
+          <include name="testAddPositives"/>
+          <include name="testSubNegatvie"/>
+          <include name="tearDownMethod"/>
+          <include name="setUpMethod"/>
+          <include name="tearDownClass"/>
+        </methods>
+      </class> <!-- Calculator_testNG -->
+      <class name="com.syntel.calculatorTest.Calculator_testNG">
+        <methods>
+          <include name="testSubNegatvie"/>
+          <include name="tearDownMethod"/>
+          <include name="setUpClass"/>
+          <include name="setUpMethod"/>
+          <include name="tearDownClass"/>
+        </methods>
+      </class> <!-- com.syntel.calculatorTest.Calculator_testNG -->
+      <class name="com.syntel.calculatorTest.TG_testcase">
+        <methods>
+          <include name="setUpClass"/>
+          <include name="tearDownMethod"/>
+          <include name="setUpMethod"/>
+          <include name="tearDownClass"/>
+        </methods>
+      </class> <!-- com.syntel.calculatorTest.TG_testcase -->
+      <class name="com.syntel.calculatorTest.NewCalculator_test">
+        <methods>
+          <include name="setUpClass"/>
+          <include name="setUpClass"/>
+          <include name="testAdd"/>
+          <include name="tearDownClass"/>
+          <include name="tearDownClass"/>
+          <include name="testSub"/>
+          <include name="testDivid"/>
+          <include name="tearDownMethod"/>
+          <include name="testMulti"/>
+          <include name="setUpMethod"/>
+        </methods>
+      </class> <!-- com.syntel.calculatorTest.NewCalculator_test -->
+      <class name="com.syntel.calculatorTest.SomthigntoTEST">
+        <methods>
+          <include name="tearDownClass"/>
+          <include name="setUpMethod"/>
+          <include name="tearDownMethod"/>
+          <include name="setUpClass"/>
+        </methods>
+      </class> <!-- com.syntel.calculatorTest.SomthigntoTEST -->
+    </classes>
+  </test> <!-- All tests for Selenium_testNG(failed) -->
+</suite> <!-- Failed suite [Selenium_testNG] -->

@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Selenium_testNG">
+    <parameter name="global_count" value="10"/>
+    <test name="calc">
+        <parameter name="num1"  value="30"/>
+        <parameter name="num2"  value="5"/>
+        <parameter name="sum"  value="35"/>
+        <parameter name="difference"  value="25"/>
+        <parameter name="multiply"  value="150"/>
+        <parameter name="divide"  value="6"/>
+        <classes>
+            <class name ="com.syntel.calculatorTest.NewCalculator_test"/>
+        </classes>
+    </test>
+    <!--
+    see examples at http://testng.org/doc/documentation-main.html#testng-xml
+
+    <suite-files>
+        <suite-file path="./junit-suite.xml" />
+    </suite-files>
+
+    <test name="TimeOut">
+        <classes>
+            <class name="test.timeout.TimeOutTest" />
+            <class name="test.timeout.TimeOutFromXmlTest"/>
+            <class name="test.timeout.TimeOutThreadLocalSampleTest"/>
+        </classes>
+    </test>
+    -->
+    
+    <test name="All tests for Selenium_testNG">
+        <packages>
+            <package name=".*"/>
+        </packages>
+    </test>
+
+</suite>

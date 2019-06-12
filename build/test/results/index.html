@@ -1,0 +1,1135 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />  
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite, 8 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-Selenium_testNG">
+              <span class="suite-name border-failed">Selenium_testNG</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-Selenium_testNG">
+                    <span>C:\mytraining_stuff\HtmlStudy\Selenium_testNG\build\test\classes\Calculator_suit.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-Selenium_testNG">
+                    <span class="test-stats">2 tests</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-Selenium_testNG">
+                    <span>7 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-Selenium_testNG">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-Selenium_testNG">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-Selenium_testNG">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-Selenium_testNG">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">24 methods, 8 failed,   16 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Selenium_testNG" class="hide-methods failed suite-Selenium_testNG"> (hide)</a> <!-- hide-methods failed suite-Selenium_testNG -->
+                      <a href="#" panel-name="suite-Selenium_testNG" class="show-methods failed suite-Selenium_testNG"> (show)</a> <!-- show-methods failed suite-Selenium_testNG -->
+                    </span>
+                    <div class="method-list-content failed suite-Selenium_testNG">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Selenium_testNG" title="com.syntel.calculatorTest.NewCalculator_test" hash-for-method="testAdd">testAdd</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Selenium_testNG" title="Calculator_testNG" hash-for-method="testAddPositives">testAddPositives</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Selenium_testNG" title="com.syntel.calculatorTest.NewCalculator_test" hash-for-method="testDivid">testDivid</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Selenium_testNG" title="com.syntel.calculatorTest.NewCalculator_test" hash-for-method="testMulti">testMulti</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Selenium_testNG" title="com.syntel.calculatorTest.NewCalculator_test" hash-for-method="testSub">testSub</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Selenium_testNG" title="com.syntel.calculatorTest.Calculator_testNG" hash-for-method="testSubNegatvie">testSubNegatvie</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Selenium_testNG" title="Calculator_testNG" hash-for-method="testSubNegatvie">testSubNegatvie</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Selenium_testNG" title="Calculator_testNG" hash-for-method="testSubPositives">testSubPositives</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Selenium_testNG -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Selenium_testNG" class="hide-methods passed suite-Selenium_testNG"> (hide)</a> <!-- hide-methods passed suite-Selenium_testNG -->
+                      <a href="#" panel-name="suite-Selenium_testNG" class="show-methods passed suite-Selenium_testNG"> (show)</a> <!-- show-methods passed suite-Selenium_testNG -->
+                    </span>
+                    <div class="method-list-content passed suite-Selenium_testNG">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Selenium_testNG" title="SomthigntoTEST" hash-for-method="hello">hello</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Selenium_testNG" title="com.syntel.calculatorTest.TG_testcase" hash-for-method="hello">hello</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Selenium_testNG" title="com.syntel.calculatorTest.TG_testcase1" hash-for-method="hello">hello</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Selenium_testNG" title="com.syntel.calculatorTest.SomthigntoTEST" hash-for-method="hello">hello</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Selenium_testNG" title="com.syntel.calculatorTest.TG_testcase1" hash-for-method="hello2">hello2</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Selenium_testNG" title="com.syntel.calculatorTest.TG_testcase" hash-for-method="hello2">hello2</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Selenium_testNG" title="com.syntel.calculatorTest.TG_testcase" hash-for-method="hello3">hello3</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Selenium_testNG" title="com.syntel.calculatorTest.TG_testcase1" hash-for-method="hello3">hello3</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Selenium_testNG" title="com.syntel.calculatorTest.NewCalculator_test" hash-for-method="testAdd(30, 5, 35)">testAdd(30, 5, 35)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Selenium_testNG" title="com.syntel.calculatorTest.Calculator_testNG" hash-for-method="testAddNegatvie">testAddNegatvie</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Selenium_testNG" title="Calculator_testNG" hash-for-method="testAddNegatvie">testAddNegatvie</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Selenium_testNG" title="com.syntel.calculatorTest.Calculator_testNG" hash-for-method="testAddPositives">testAddPositives</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Selenium_testNG" title="com.syntel.calculatorTest.NewCalculator_test" hash-for-method="testDivid(30, 5, 6)">testDivid(30, 5, 6)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Selenium_testNG" title="com.syntel.calculatorTest.NewCalculator_test" hash-for-method="testMulti(30, 5, 150)">testMulti(30, 5, 150)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Selenium_testNG" title="com.syntel.calculatorTest.NewCalculator_test" hash-for-method="testSub(30, 5, 25)">testSub(30, 5, 25)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Selenium_testNG" title="com.syntel.calculatorTest.Calculator_testNG" hash-for-method="testSubPositives">testSubPositives</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Selenium_testNG -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Selenium_testNG" class="panel Selenium_testNG">
+          <div class="suite-Selenium_testNG-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">Calculator_testNG</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testAddPositives">
+                  </a> <!-- testAddPositives -->
+                  <span class="method-name">testAddPositives</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at Calculator_testNG.testAddPositives(Calculator_testNG.java:19)
+... Removed 23 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testSubNegatvie">
+                  </a> <!-- testSubNegatvie -->
+                  <span class="method-name">testSubNegatvie</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at Calculator_testNG.testSubNegatvie(Calculator_testNG.java:43)
+... Removed 23 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testSubPositives">
+                  </a> <!-- testSubPositives -->
+                  <span class="method-name">testSubPositives</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at Calculator_testNG.testSubPositives(Calculator_testNG.java:35)
+... Removed 23 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Selenium_testNG-class-failed -->
+          <div class="suite-Selenium_testNG-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.syntel.calculatorTest.Calculator_testNG</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testSubNegatvie">
+                  </a> <!-- testSubNegatvie -->
+                  <span class="method-name">testSubNegatvie</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [-30] but found [-50]
+	at com.syntel.calculatorTest.Calculator_testNG.testSubNegatvie(Calculator_testNG.java:45)
+... Removed 28 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Selenium_testNG-class-failed -->
+          <div class="suite-Selenium_testNG-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.syntel.calculatorTest.NewCalculator_test</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testAdd">
+                  </a> <!-- testAdd -->
+                  <span class="method-name">testAdd</span>
+                  <div class="stack-trace">org.testng.TestNGException: 
+Parameter &apos;num1&apos; is required by @Test on method testAdd but has not been marked @Optional or defined
+in C:\mytraining_stuff\HtmlStudy\Selenium_testNG\build\test\classes\Calculator_suit.xml
+... Removed 21 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testDivid">
+                  </a> <!-- testDivid -->
+                  <span class="method-name">testDivid</span>
+                  <div class="stack-trace">org.testng.TestNGException: 
+Parameter &apos;num1&apos; is required by @Test on method testDivid but has not been marked @Optional or defined
+in C:\mytraining_stuff\HtmlStudy\Selenium_testNG\build\test\classes\Calculator_suit.xml
+... Removed 21 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testMulti">
+                  </a> <!-- testMulti -->
+                  <span class="method-name">testMulti</span>
+                  <div class="stack-trace">org.testng.TestNGException: 
+Parameter &apos;num1&apos; is required by @Test on method testMulti but has not been marked @Optional or defined
+in C:\mytraining_stuff\HtmlStudy\Selenium_testNG\build\test\classes\Calculator_suit.xml
+... Removed 21 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testSub">
+                  </a> <!-- testSub -->
+                  <span class="method-name">testSub</span>
+                  <div class="stack-trace">org.testng.TestNGException: 
+Parameter &apos;num1&apos; is required by @Test on method testSub but has not been marked @Optional or defined
+in C:\mytraining_stuff\HtmlStudy\Selenium_testNG\build\test\classes\Calculator_suit.xml
+... Removed 21 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Selenium_testNG-class-failed -->
+          <div class="suite-Selenium_testNG-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.syntel.calculatorTest.TG_testcase1</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="hello">
+                  </a> <!-- hello -->
+                  <span class="method-name">hello</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="hello2">
+                  </a> <!-- hello2 -->
+                  <span class="method-name">hello2</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="hello3">
+                  </a> <!-- hello3 -->
+                  <span class="method-name">hello3</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Selenium_testNG-class-passed -->
+          <div class="suite-Selenium_testNG-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">SomthigntoTEST</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="hello">
+                  </a> <!-- hello -->
+                  <span class="method-name">hello</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Selenium_testNG-class-passed -->
+          <div class="suite-Selenium_testNG-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.syntel.calculatorTest.Calculator_testNG</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testAddNegatvie">
+                  </a> <!-- testAddNegatvie -->
+                  <span class="method-name">testAddNegatvie</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testAddPositives">
+                  </a> <!-- testAddPositives -->
+                  <span class="method-name">testAddPositives</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testSubPositives">
+                  </a> <!-- testSubPositives -->
+                  <span class="method-name">testSubPositives</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Selenium_testNG-class-passed -->
+          <div class="suite-Selenium_testNG-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">Calculator_testNG</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testAddNegatvie">
+                  </a> <!-- testAddNegatvie -->
+                  <span class="method-name">testAddNegatvie</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Selenium_testNG-class-passed -->
+          <div class="suite-Selenium_testNG-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.syntel.calculatorTest.TG_testcase</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="hello">
+                  </a> <!-- hello -->
+                  <span class="method-name">hello</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="hello2">
+                  </a> <!-- hello2 -->
+                  <span class="method-name">hello2</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="hello3">
+                  </a> <!-- hello3 -->
+                  <span class="method-name">hello3</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Selenium_testNG-class-passed -->
+          <div class="suite-Selenium_testNG-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.syntel.calculatorTest.NewCalculator_test</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testAdd(30, 5, 35)">
+                  </a> <!-- testAdd(30, 5, 35) -->
+                  <span class="method-name">testAdd</span>
+                  <span class="parameters">(30, 5, 35)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testDivid(30, 5, 6)">
+                  </a> <!-- testDivid(30, 5, 6) -->
+                  <span class="method-name">testDivid</span>
+                  <span class="parameters">(30, 5, 6)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testMulti(30, 5, 150)">
+                  </a> <!-- testMulti(30, 5, 150) -->
+                  <span class="method-name">testMulti</span>
+                  <span class="parameters">(30, 5, 150)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testSub(30, 5, 25)">
+                  </a> <!-- testSub(30, 5, 25) -->
+                  <span class="method-name">testSub</span>
+                  <span class="parameters">(30, 5, 25)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Selenium_testNG-class-passed -->
+          <div class="suite-Selenium_testNG-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.syntel.calculatorTest.SomthigntoTEST</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="hello">
+                  </a> <!-- hello -->
+                  <span class="method-name">hello</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Selenium_testNG-class-passed -->
+        </div> <!-- panel Selenium_testNG -->
+        <div panel-name="test-xml-Selenium_testNG" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\mytraining_stuff\HtmlStudy\Selenium_testNG\build\test\classes\Calculator_suit.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;Selenium_testNG&quot;&gt;
+  &lt;parameter name=&quot;global_count&quot; value=&quot;10&quot;/&gt;
+  &lt;test name=&quot;calc&quot;&gt;
+    &lt;parameter name=&quot;num1&quot; value=&quot;30&quot;/&gt;
+    &lt;parameter name=&quot;difference&quot; value=&quot;25&quot;/&gt;
+    &lt;parameter name=&quot;sum&quot; value=&quot;35&quot;/&gt;
+    &lt;parameter name=&quot;divide&quot; value=&quot;6&quot;/&gt;
+    &lt;parameter name=&quot;multiply&quot; value=&quot;150&quot;/&gt;
+    &lt;parameter name=&quot;num2&quot; value=&quot;5&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.syntel.calculatorTest.NewCalculator_test&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- calc --&gt;
+  &lt;test name=&quot;All tests for Selenium_testNG&quot;&gt;
+    &lt;packages&gt;
+      &lt;package name=&quot;.*&quot;/&gt;
+    &lt;/packages&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;selenium_testng.Calculator&quot;/&gt;
+      &lt;class name=&quot;selenium_testng.Selenium_testNG&quot;/&gt;
+      &lt;class name=&quot;Calculator_testNG&quot;/&gt;
+      &lt;class name=&quot;com.syntel.calculatorTest.Calculator_testNG&quot;/&gt;
+      &lt;class name=&quot;com.syntel.calculatorTest.NewCalculator_test&quot;/&gt;
+      &lt;class name=&quot;com.syntel.calculatorTest.SomthigntoTEST&quot;/&gt;
+      &lt;class name=&quot;com.syntel.calculatorTest.TG_testcase&quot;/&gt;
+      &lt;class name=&quot;com.syntel.calculatorTest.TG_testcase1&quot;/&gt;
+      &lt;class name=&quot;SomthigntoTEST&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- All tests for Selenium_testNG --&gt;
+&lt;/suite&gt; &lt;!-- Selenium_testNG --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Selenium_testNG" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Selenium_testNG</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">calc (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">All tests for Selenium_testNG (9 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Selenium_testNG" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Selenium_testNG</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="test-group">
+              <span class="test-group-name">default-group</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">hello</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">include-one</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">hello</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">include-threee</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">hello3</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">include-two</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">hello2</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">regression</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">hello2</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">hello3</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">testNG</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">hello2</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">unit</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">hello3</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Selenium_testNG" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Selenium_testNG</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Selenium_testNG');
+function tableData_Selenium_testNG() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(24);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'hello')
+data.setCell(0, 2, 'SomthigntoTEST')
+data.setCell(0, 3, 1);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'hello3')
+data.setCell(1, 2, 'com.syntel.calculatorTest.TG_testcase1')
+data.setCell(1, 3, 1);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'hello2')
+data.setCell(2, 2, 'com.syntel.calculatorTest.TG_testcase1')
+data.setCell(2, 3, 1);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'hello')
+data.setCell(3, 2, 'com.syntel.calculatorTest.SomthigntoTEST')
+data.setCell(3, 3, 1);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'testAdd')
+data.setCell(4, 2, 'com.syntel.calculatorTest.NewCalculator_test')
+data.setCell(4, 3, 0);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'testDivid')
+data.setCell(5, 2, 'com.syntel.calculatorTest.NewCalculator_test')
+data.setCell(5, 3, 0);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'testSub')
+data.setCell(6, 2, 'com.syntel.calculatorTest.NewCalculator_test')
+data.setCell(6, 3, 0);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'testMulti')
+data.setCell(7, 2, 'com.syntel.calculatorTest.NewCalculator_test')
+data.setCell(7, 3, 0);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'testAddPositives')
+data.setCell(8, 2, 'com.syntel.calculatorTest.Calculator_testNG')
+data.setCell(8, 3, 0);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'hello3')
+data.setCell(9, 2, 'com.syntel.calculatorTest.TG_testcase')
+data.setCell(9, 3, 0);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'testSubPositives')
+data.setCell(10, 2, 'com.syntel.calculatorTest.Calculator_testNG')
+data.setCell(10, 3, 0);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'testAddNegatvie')
+data.setCell(11, 2, 'com.syntel.calculatorTest.Calculator_testNG')
+data.setCell(11, 3, 0);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'hello')
+data.setCell(12, 2, 'com.syntel.calculatorTest.TG_testcase')
+data.setCell(12, 3, 0);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'hello2')
+data.setCell(13, 2, 'com.syntel.calculatorTest.TG_testcase')
+data.setCell(13, 3, 0);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'hello')
+data.setCell(14, 2, 'com.syntel.calculatorTest.TG_testcase1')
+data.setCell(14, 3, 0);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'testAddNegatvie')
+data.setCell(15, 2, 'Calculator_testNG')
+data.setCell(15, 3, 0);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'testSubPositives')
+data.setCell(16, 2, 'Calculator_testNG')
+data.setCell(16, 3, 0);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'testDivid')
+data.setCell(17, 2, 'com.syntel.calculatorTest.NewCalculator_test')
+data.setCell(17, 3, 0);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'testAddPositives')
+data.setCell(18, 2, 'Calculator_testNG')
+data.setCell(18, 3, 0);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 'testAdd')
+data.setCell(19, 2, 'com.syntel.calculatorTest.NewCalculator_test')
+data.setCell(19, 3, 0);
+data.setCell(20, 0, 20)
+data.setCell(20, 1, 'testSub')
+data.setCell(20, 2, 'com.syntel.calculatorTest.NewCalculator_test')
+data.setCell(20, 3, 0);
+data.setCell(21, 0, 21)
+data.setCell(21, 1, 'testSubNegatvie')
+data.setCell(21, 2, 'com.syntel.calculatorTest.Calculator_testNG')
+data.setCell(21, 3, 0);
+data.setCell(22, 0, 22)
+data.setCell(22, 1, 'testSubNegatvie')
+data.setCell(22, 2, 'Calculator_testNG')
+data.setCell(22, 3, 0);
+data.setCell(23, 0, 23)
+data.setCell(23, 1, 'testMulti')
+data.setCell(23, 2, 'com.syntel.calculatorTest.NewCalculator_test')
+data.setCell(23, 3, 0);
+window.suiteTableData['Selenium_testNG']= { tableData: data, tableDiv: 'times-div-Selenium_testNG'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 4 ms</span>
+              <div id="times-div-Selenium_testNG">
+              </div> <!-- times-div-Selenium_testNG -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Selenium_testNG" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Selenium_testNG</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Selenium_testNG" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Selenium_testNG" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.syntel.calculatorTest.NewCalculator_test</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setUpClass</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">setUpMethod</span>
+                <span class="method-start">31 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testAdd(30, 5, 35)</span>
+                <span class="method-start">31 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDownMethod</span>
+                <span class="method-start">31 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUpMethod</span>
+                <span class="method-start">31 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testDivid(30, 5, 6)</span>
+                <span class="method-start">31 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDownMethod</span>
+                <span class="method-start">31 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUpMethod</span>
+                <span class="method-start">31 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testMulti(30, 5, 150)</span>
+                <span class="method-start">31 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDownMethod</span>
+                <span class="method-start">31 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUpMethod</span>
+                <span class="method-start">31 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testSub(30, 5, 25)</span>
+                <span class="method-start">31 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDownMethod</span>
+                <span class="method-start">31 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDownClass</span>
+                <span class="method-start">31 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">Calculator_testNG</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setUpClass</span>
+                <span class="method-start">93 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">setUpMethod</span>
+                <span class="method-start">93 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testAddNegatvie</span>
+                <span class="method-start">93 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDownMethod</span>
+                <span class="method-start">93 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUpMethod</span>
+                <span class="method-start">93 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testAddPositives</span>
+                <span class="method-start">93 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDownMethod</span>
+                <span class="method-start">93 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUpMethod</span>
+                <span class="method-start">93 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testSubNegatvie</span>
+                <span class="method-start">93 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDownMethod</span>
+                <span class="method-start">93 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUpMethod</span>
+                <span class="method-start">93 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testSubPositives</span>
+                <span class="method-start">93 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDownMethod</span>
+                <span class="method-start">93 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDownClass</span>
+                <span class="method-start">93 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.syntel.calculatorTest.Calculator_testNG</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setUpClass</span>
+                <span class="method-start">187 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">setUpMethod</span>
+                <span class="method-start">187 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testAddNegatvie</span>
+                <span class="method-start">187 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDownMethod</span>
+                <span class="method-start">187 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUpMethod</span>
+                <span class="method-start">187 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testAddPositives</span>
+                <span class="method-start">187 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDownMethod</span>
+                <span class="method-start">187 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUpMethod</span>
+                <span class="method-start">187 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testSubNegatvie</span>
+                <span class="method-start">187 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDownMethod</span>
+                <span class="method-start">187 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUpMethod</span>
+                <span class="method-start">187 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testSubPositives</span>
+                <span class="method-start">187 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDownMethod</span>
+                <span class="method-start">187 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDownClass</span>
+                <span class="method-start">187 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.syntel.calculatorTest.NewCalculator_test</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setUpClass</span>
+                <span class="method-start">823 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDownClass</span>
+                <span class="method-start">826 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.syntel.calculatorTest.SomthigntoTEST</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setUpClass</span>
+                <span class="method-start">827 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">setUpMethod</span>
+                <span class="method-start">827 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">hello</span>
+                <span class="method-start">827 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDownMethod</span>
+                <span class="method-start">828 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDownClass</span>
+                <span class="method-start">828 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.syntel.calculatorTest.TG_testcase</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setUpClass</span>
+                <span class="method-start">829 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">setUpMethod</span>
+                <span class="method-start">833 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">hello</span>
+                <span class="method-start">834 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDownMethod</span>
+                <span class="method-start">834 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUpMethod</span>
+                <span class="method-start">834 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">hello2</span>
+                <span class="method-start">835 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDownMethod</span>
+                <span class="method-start">835 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUpMethod</span>
+                <span class="method-start">835 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">hello3</span>
+                <span class="method-start">835 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDownMethod</span>
+                <span class="method-start">835 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDownClass</span>
+                <span class="method-start">836 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.syntel.calculatorTest.TG_testcase1</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setUpClass</span>
+                <span class="method-start">836 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">setUpMethod</span>
+                <span class="method-start">836 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">hello</span>
+                <span class="method-start">837 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDownMethod</span>
+                <span class="method-start">837 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUpMethod</span>
+                <span class="method-start">837 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">hello2</span>
+                <span class="method-start">841 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDownMethod</span>
+                <span class="method-start">842 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUpMethod</span>
+                <span class="method-start">842 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">hello3</span>
+                <span class="method-start">842 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDownMethod</span>
+                <span class="method-start">843 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDownClass</span>
+                <span class="method-start">843 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">SomthigntoTEST</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setUpClass</span>
+                <span class="method-start">844 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">setUpMethod</span>
+                <span class="method-start">844 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">hello</span>
+                <span class="method-start">844 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDownMethod</span>
+                <span class="method-start">845 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDownClass</span>
+                <span class="method-start">845 ms</span>
+              </div> <!-- configuration-class after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>
